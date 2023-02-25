@@ -1,4 +1,5 @@
-﻿// Напишите программу, которая на вход принимает два числа и проверяет, является ли первое число квадратом второго.
+﻿// Напишите программу, которая на вход принимает два числа и 
+//проверяет, является ли первое число квадратом второго.
 /*
 Console.Write("input a first number: ");
 int number1 = Convert.ToInt32(Console.ReadLine());
@@ -30,5 +31,31 @@ while(current <= num)
     Console.Write(current + " ");
     current++;
 }
+*/
+
+
+// Задача 2. Напишите программу, которая на вход принимает два числа и 
+//выдает, какое число большее, а какое меньшее.
+/*
+Console.Write("input a first number: ");
+int number1 = Convert.ToInt32(Console.ReadLine());
+Console.Write("input a second number: ");
+int number2 = Convert.ToInt32(Console.ReadLine());
+int max = number1;
+int min = number2;
+if(max > number2)
+{
+    max = number1;
+    min = number2;
+}
+else 
+{
+    max = number2;
+    min = number1;
+}
+Console.Write("max = ");
+Console.WriteLine(max);
+Console.Write("min = ");
+Console.WriteLine(min);
 */
 
