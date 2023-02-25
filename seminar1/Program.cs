@@ -19,7 +19,8 @@ else
 */
 
 
-// Напишите программу, которая на вход принимает одно число (N), а на выходе показывает все целые числа в промежутке от -N до N.
+// Напишите программу, которая на вход принимает одно число (N), 
+//а на выходе показывает все целые числа в промежутке от -N до N.
 /*
 Console.Write("Input a positive number: ");
 int num = Convert.ToInt32(Console.ReadLine());
@@ -89,5 +90,22 @@ if(current ==0)
 else 
 {
     Console.WriteLine("No");
+}
+*/
+
+// Задача 8. Напишите программу, которая на вход принимает число (N)
+// а на выходе показывает все четные числа от 1 до N.
+/*
+Console.Write("input a number that more than 1 ");
+int N = Convert.ToInt32(Console.ReadLine());
+int current = 1;
+while (current <= N)
+{
+    if (current % 2==0)
+    {
+        Console.WriteLine(current +" ");
+    current ++;
+    }
+    else current ++;
 }
 */
