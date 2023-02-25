@@ -76,3 +76,18 @@ Console.Write("max = ");
 Console.WriteLine(max);
 */
 
+// Задача 6. Напишите программу, которая на вход принимает число и выдает,
+// является ли число четным
+/*
+Console.Write("input a number ");
+int num = Convert.ToInt32(Console.ReadLine());
+int current = (num % 2);
+if(current ==0)
+{
+    Console.WriteLine("Yeap!");
+}
+else 
+{
+    Console.WriteLine("No");
+}
+*/
