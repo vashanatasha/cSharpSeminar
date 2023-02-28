@@ -18,7 +18,6 @@ else
 }
 */
 
-
 // Напишите программу, которая на вход принимает одно число (N), 
 //а на выходе показывает все целые числа в промежутке от -N до N.
 /*
@@ -104,8 +103,8 @@ while (current <= N)
     if (current % 2==0)
     {
         Console.WriteLine(current +" ");
-    current ++;
     }
-    else current ++;
+
+    current ++;
 }
 */
