@@ -20,7 +20,7 @@ Console.WriteLine($"New version of {randNumber} is {newNumber}");
 
 //Напишите программу, которая принимает на вход число 
 //и проверяет, кратно ли оно одновременно a и b.
-
+/*
 bool IsDivided(int number, int firstDivider, int secondDivider)
 {
     return number % firstDivider == 0 && number % secondDivider == 0;
@@ -39,3 +39,41 @@ Console.Write("Input a second divider: ");
 int div2 = Convert.ToInt32(Console.ReadLine());
 
 Console.WriteLine(IsDivided(num, div1, div2));
+*/
+
+
+// Напишите программу, которая выводит случайное число 
+// из отрезка [10, 99] и показывает наибольшую цифру числа.
+
+/*
+int num = new Random().Next(10, 100);
+int MaxNumber (int num)
+{
+    int ten = num / 10;
+    int one = num % 10;
+    if(ten>one)
+        return ten;
+    else
+        return one;
+}
+Console.WriteLine($"Рандомное число это: {num} наибольшая цифра это: {MaxNumber(num)}");
+*/
+
+
+
+// Напишите программу, которая принимает на вход два числа и 
+//проверяет, является ли одно число квадратом другого.
+/*
+bool IsQuad (int firstNum, int secondNum)
+{
+    if (firstNum == secondNum*secondNum || secondNum == firstNum*firstNum)
+        return true;
+        else return false;
+}
+Console.Write("Input a number ");
+int num1 = Convert.ToInt32(Console.ReadLine());
+Console.Write("Input the second number ");
+int num2 = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine(IsQuad (num1, num2));
+*/
