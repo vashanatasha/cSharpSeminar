@@ -136,24 +136,49 @@
 
 
 
+// HOME WORK
+
 // Задача 25: Напишите цикл, который принимает на вход два числа
 // (A и B) и возводит число A в натуральную степень B.
 // 3, 5 -> 243 (3⁵)
 // 2, 4 -> 16 (math.pow) один цикл for. вернуть произведение 
 
+// int Prompt(string message)
+// {
+//     System.Console.Write(message);
+//     string readInput = System.Console.ReadLine();
+//     int result = int.Parse(readInput);
+//     return result;
+// } // либо методом convert, либо TryParse(проверка число это или нет)
+// // if(Try.Parse(readInput) int number), else вы ввели не число
 
+// int Power(int powerBase, int exponent)
+// {
+//     int power = 1; //дополнительная переменная, которая накапливает рез-т
+//     for (int i = 0; i < exponent; i++) //exponent = 5, значит должно произойти 5 итераций цикла
+//     {
+//         power *= powerBase;
+//     }
+//     return power; //выводится в вывод
+// }
 
+// bool ValidateExponent(int exponent) //проверяем яляется ли наш показатель положительным
+// {
+//     if (exponent < 0)
+//     {
+//         System.Console.WriteLine("Показатель должен быть не меньше нуля");
+//         return false;
+//     }
+//     return true; 
+// }
 
-
-
-
-
-
-
-
-
-
-
+// int powerBase = Prompt("Введите основание: "); //изначальное число, которое нужно возвести
+// int exponent = Prompt("Введите показатель: "); 
+// if (ValidateExponent(exponent))
+// {
+//     System.Console.WriteLine($"Число {powerBase} в степени {exponent} равно {Power(powerBase, exponent)}");
+// }
+// //вызов метода происходит в выводе.
 
 
 
@@ -164,25 +189,21 @@
 // 9012 -> 12 
 // похожа на задачу 26, не только делить на 10 но и складывать их
 
+// int Sum(int number)
+// {
+//     int result = 0;
+//     while(number > 0) // неизвестно ск-ко итераций будет. цикл происходит пока number == 0
+//     {
+//         result += number % 10;
 
+//         number /= 10;
+//     }
+//     return result;
+// }
+// Console.Write("Введите число: ");
+// int number = (Convert.ToInt32(Console.ReadLine()));
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// Console.WriteLine($"Сумма цифр в числе {number} = {Sum(number)}");
 
 
 
@@ -190,4 +211,35 @@
 // которая задаёт массив из 8 элементов и выводит их на экран.
 // 1, 2, 5, 7, 19 -> [1, 2, 5, 7, 19]
 // 6, 1, 33 -> [6, 1, 33]
-// 
+
+// int[] FillArray(int Length, int minValue, int maxValue) //название метода
+// {
+//     int[] arr = new int [Length];
+//     Random rnd = new Random(); //создали переменную типа Random(это системный класс)
+//     for (int i = 0; i < Length; i++)
+//     {
+//         arr[i] = rnd.Next(minValue, maxValue +1); //заполняется весь массив. чтобы последнее число входило в диапозон +1
+//     }
+//     return arr; //возвращается в PrintArray
+// }
+
+// void PrintArray(int[] array)
+// {
+//     System.Console.Write("[");
+//     for (int i = 0; i < array.Length -1; i++) //-1 чтобы заполнились все элементы без лишнего индекса
+//     {
+//         System.Console.Write($"{array[i]}, ");//вывод значения массива
+//     }
+//     System.Console.Write($"{array[array.Length -1]}");//вывод значения массива
+//     System.Console.WriteLine("]");
+// } //метод ничего не вернул, просто сделал вывод
+
+// System.Console.Write("Длина массива: ");
+// int length = Convert.ToInt32(Console.ReadLine());
+// System.Console.Write("Начальное значение для диапозона случайного числа: ");
+// int min = Convert.ToInt32(Console.ReadLine());
+// System.Console.Write("Конечное значение для диапозона случайного числа: ");
+// int max = Convert.ToInt32(Console.ReadLine());
+
+// int [] arr = FillArray(length, min, max);// заполнение массива случайными числами, массив принимает данные переменных
+// PrintArray(arr); //вывод самого массива
